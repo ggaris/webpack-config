@@ -3,7 +3,8 @@
   "scripts": {
     "start": "webpack serve",
     "watch": "webpack --watch",
-    "build": "webpack"
+    "build": "set NODE_ENV=production && webpack",
+    "build:dev": "webpack"
   },
   "dependencies": {
     "webpack": "^5.21.2",
