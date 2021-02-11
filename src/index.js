@@ -4,4 +4,12 @@ const elvenShielRecipe = {
   three: 6,
 };
 
+const foo = {
+  ...elvenShielRecipe,
+  for: 4,
+  one: 7,
+};
+
 console.log(elvenShielRecipe);
+
+console.log(foo);
