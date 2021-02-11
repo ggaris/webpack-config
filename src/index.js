@@ -1,3 +1,5 @@
+import "./style/index.scss";
+
 const elvenShielRecipe = {
   one: 1,
   two: 2,
