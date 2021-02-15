@@ -7,6 +7,7 @@ const App = () => {
     <div>
       <div className="foo">333</div>
       <img src={src1} alt=""/>
+      <h1>25553</h1>
     </div>
   )
 }
