@@ -5,7 +5,7 @@
     "watch": "webpack --watch",
     "build": "cross-env NODE_ENV=production webpack",
     "build:dev": "webpack",
-    "clean":"rd /s/q dist"
+    "clean": "rd /s/q dist"
   },
   "dependencies": {
     "react": "^17.0.1",
@@ -19,8 +19,10 @@
     "@babel/preset-env": "^7.12.13",
     "@babel/preset-react": "^7.12.13",
     "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^3.0.0",
     "cross-env": "^7.0.3",
     "css-loader": "^5.0.2",
+    "html-webpack-plugin": "^5.0.0-beta.6",
     "mini-css-extract-plugin": "^1.3.6",
     "postcss": "^8.2.6",
     "postcss-loader": "^5.0.0",
