@@ -1,7 +1,12 @@
+import src1 from './images/logo.png'
+
+import "./style/index.scss"
+
 const App = () => {
   return (
     <div>
-      <h1>333</h1>
+      <div className="foo">333</div>
+      <img src={src1} alt=""/>
     </div>
   )
 }

@@ -4,7 +4,8 @@
     "start": "webpack serve",
     "watch": "webpack --watch",
     "build": "cross-env NODE_ENV=production webpack",
-    "build:dev": "webpack"
+    "build:dev": "webpack",
+    "clean":"rd /s/q dist"
   },
   "dependencies": {
     "react": "^17.0.1",
