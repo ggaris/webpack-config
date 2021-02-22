@@ -2,14 +2,14 @@
   "private": true,
   "scripts": {
     "start": "cross-env SERVE=true webpack serve",
-    "watch": "webpack --watch",
+    "watch": "cross-env NODE_ENV=production webpack --watch",
     "build": "cross-env NODE_ENV=production webpack",
-    "build:dev": "webpack",
-    "clean": "rd /s/q dist"
+    "build:dev": "webpack"
   },
   "dependencies": {
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
     "webpack": "^5.21.2",
     "webpack-cli": "^4.5.0",
     "webpack-dev-server": "^3.11.2"

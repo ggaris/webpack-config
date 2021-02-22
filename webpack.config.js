@@ -10,7 +10,7 @@ const plugins = [
   new CleanWebpackPlugin(),
   new MiniCssExtractPlugin(),
   new HtmlWebpackPlugin({
-    template: "./src/index.html",
+    template: "./src/public/index.html",
   }),
 ];
 
@@ -68,6 +68,11 @@ module.exports = {
   plugins: plugins,
 
   resolve: {
+    alias: {
+      src: path.resolve(__dirname, "src"),
+      pages: path.resolve(__dirname, "src/pages"),
+      com: path.resolve(__dirname, "src/components"),
+    },
     extensions: [".js", ".jsx"],
   },
 
@@ -75,5 +80,6 @@ module.exports = {
   devServer: {
     contentBase: "./dist",
     hot: true, //热加载
+    historyApiFallback: true, //history模式 开启
   },
 };

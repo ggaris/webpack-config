@@ -3,6 +3,7 @@
 ```
 git init
 git clone https://github.com/jiantong12138/webpack-config.git
+cd webpack-config
 yarn install
 ```
 
